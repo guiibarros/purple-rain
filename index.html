@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Purple Rain</title>
+    <meta charset="utf-8">
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c0411;
+        color: #b16fda;
+      }
+
+      canvas {
+        background-color: #170722;
+      }
+
+      #panel {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas width="800" height="500"></canvas>
+
+    <div id="panel">
+      <label>
+        Rain drops
+        <input id="drops" type="range" step="100" min="100" max="1000" value="100">
+      </label>
+
+      <label>
+        Wind force
+        <input id="wind" type="range" step="1" min="-5" max="5" value="0">
+      </label>
+
+      <label>
+        Drop speed
+        <input id="drop" type="range" step="0.5" min="0.5" max="3" value="1.5">
+      </label>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
